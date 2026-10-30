@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Input Output</title>
+</head>
+<body>
+
+    <h2>Student Details</h2>
+
+    <label>Enter Name:</label>
+    <input type="text" id="name">
+    <br><br>
+
+    <label>Enter Roll Number:</label>
+    <input type="number" id="roll">
+    <br><br>
+
+    <label>Enter Standard:</label>
+    <input type="text" id="std">
+    <br><br>
+
+    <button onclick="display()">Submit</button>
+
+    <h2>Output</h2>
+    <p id="result"></p>
+
+    <script>
+        function display() {
+            let name = document.getElementById("name").value;
+            let roll = document.getElementById("roll").value;
+            let std = document.getElementById("std").value;
+
+            document.getElementById("result").innerHTML =
+                "Name: " + name + "<br>" +
+                "Roll Number: " + roll + "<br>" +
+                "Standard: " + std;
+        }
+    </script>
+
+</body>
+</html>
