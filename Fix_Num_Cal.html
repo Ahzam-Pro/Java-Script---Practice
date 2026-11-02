@@ -5,7 +5,12 @@
 </head>
 <body>
 
+    <label></label>
+
 <script>
+
+var num1 = Number(prompt("Type Number"));
+var num2 = Number(prompt("Type Number"));
 
 function calculate(num1, num2, opreator) {
     let result;
@@ -27,18 +32,27 @@ function calculate(num1, num2, opreator) {
             result = num1 / num2;
             break;
 
+        case '%':
+            result = num1 % num2;
+            break;
+
+        case '^':
+            result = num1 ** num2;
+            break;
+
         default:
             result = "Error: Invalid Opreator";
     }
     return result;
 }
 
-console.log(calculate(10,10,"+"));
-console.log(calculate(10,10,"-"));
-console.log(calculate(10,10,"*"));
-console.log(calculate(10,10,"/"));
+document.write(num1 + " + " + num2 + " = " + calculate(num1,num2,"+")+"<br>");
+document.write(num1 + " - " + num2 + " = " + calculate(num1,num2,"-")+"<br>");
+document.write(num1 + " × " + num2 + " = " + calculate(num1,num2,"*")+"<br>");
+document.write(num1 + " ÷ " + num2 + " = " + calculate(num1,num2,"/")+"<br>");
+document.write(num1 + " % " + num2 + " = " + calculate(num1,num2,"%")+"<br>");
+document.write(num1 + " <sup> " + num2 + " </sup> = " + calculate(num1,num2,"^")+"<br>");
 
 </script>
-
 </body>
 </html>
