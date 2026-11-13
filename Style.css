@@ -1,0 +1,17 @@
+body {
+    background-color: #121212;
+    color: whitesmoke;
+    text-align: center;
+}
+
+button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    text-decoration: none;
+    border: 10px;
+    border-radius: 20%;
+}
+
+button:hover {
+    color: #1D4ED8;
+}

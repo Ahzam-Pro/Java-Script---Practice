@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fix Num Cal</title>
+</head>
+<body>
+
+    <label></label>
+
+<script>
+
+var num1 = Number(prompt("Type Number"));
+var num2 = Number(prompt("Type Number"));
+
+function calculate(num1, num2, opreator) {
+    let result;
+
+    switch (opreator) {
+        case '+':
+            result = num1 + num2;
+            break;
+
+        case '-':
+            result = num1 - num2;
+            break;
+        
+        case '*':
+            result = num1 * num2;
+            break;
+
+        case '/':
+            result = num1 / num2;
+            break;
+
+        case '%':
+            result = num1 % num2;
+            break;
+
+        case '^':
+            result = num1 ** num2;
+            break;
+
+        default:
+            result = "Error: Invalid Opreator";
+    }
+    return result;
+}
+
+document.write(num1 + " + " + num2 + " = " + calculate(num1,num2,"+")+"<br>");
+document.write(num1 + " - " + num2 + " = " + calculate(num1,num2,"-")+"<br>");
+document.write(num1 + " × " + num2 + " = " + calculate(num1,num2,"*")+"<br>");
+document.write(num1 + " ÷ " + num2 + " = " + calculate(num1,num2,"/")+"<br>");
+document.write(num1 + " % " + num2 + " = " + calculate(num1,num2,"%")+"<br>");
+document.write(num1 + " <sup> " + num2 + " </sup> = " + calculate(num1,num2,"^")+"<br>");
+
+</script>
+</body>
+</html>
