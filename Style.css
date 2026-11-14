@@ -1,7 +1,7 @@
 body {
     background-color: #121212;
     color: whitesmoke;
-    text-align: center;
+    font-family: "Times New Roman", Arial, serif;
 }
 
 button {
@@ -9,9 +9,15 @@ button {
     color: #FFFFFF;
     text-decoration: none;
     border: 10px;
-    border-radius: 20%;
+    font-family: inherit;
 }
 
 button:hover {
+    color: #1D4ED8;
+    background-color: #121212;
+}
+
+#intro {
+    direction: rtl;
     color: #1D4ED8;
 }
