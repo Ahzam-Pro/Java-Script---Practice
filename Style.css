@@ -10,11 +10,20 @@ button {
     text-decoration: none;
     border: 10px;
     font-family: inherit;
+    text-align: center;
 }
 
 button:hover {
     color: #1D4ED8;
     background-color: #121212;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.Links_Buttons > button {
+    text-align: center;
 }
 
 #intro {
