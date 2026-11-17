@@ -16,17 +16,33 @@ button {
 button:hover {
     color: #1D4ED8;
     background-color: #121212;
+    text-decoration: underline #10B981 solid 2px;
 }
 
-h2, h3 {
+h1 {
     text-align: center;
+    text-decoration: overline;
+}
+
+#Welcome_para {
+    text-align: justify;
 }
 
 .Links_Buttons > button {
-    text-align: center;
+    text-align: left;
 }
 
 #intro {
     direction: rtl;
-    color: #1D4ED8;
+    color: #1D4ED8;   
+}
+
+footer {
+    border: #121212;
+}
+
+footer > button {
+    color: #FFFFFF;
+    background-color: #121212;
+    text-decoration: solid;
 }
