@@ -5,12 +5,20 @@
 </head>
 <body>
 
-    <label></label>
+<label for="First_Num">Enter First Number</label>
+<input type="number" id="First_Num" name="First_Num" placeholder="First Num" required><br>
+
+<label for="Sec_Num">Enter Second Number</label>
+<input type="number" id="Sec_Num" name="Sec_Num" placeholder="Second Num" required><br>
+
+<button type="submit" onclick="calculate()">Submit Numbers</button><br>
+
+<p id="Cal_Result"></p>
 
 <script>
 
-var num1 = Number(prompt("Type Number"));
-var num2 = Number(prompt("Type Number"));
+var num1 = document.getElementById("First_Num").value;
+var num2 = document.getElementById("Sec_Num").value;
 
 function calculate(num1, num2, opreator) {
     let result;
@@ -46,12 +54,13 @@ function calculate(num1, num2, opreator) {
     return result;
 }
 
-document.write(num1 + " + " + num2 + " = " + calculate(num1,num2,"+")+"<br>");
-document.write(num1 + " - " + num2 + " = " + calculate(num1,num2,"-")+"<br>");
-document.write(num1 + " × " + num2 + " = " + calculate(num1,num2,"*")+"<br>");
-document.write(num1 + " ÷ " + num2 + " = " + calculate(num1,num2,"/")+"<br>");
-document.write(num1 + " % " + num2 + " = " + calculate(num1,num2,"%")+"<br>");
-document.write(num1 + " <sup> " + num2 + " </sup> = " + calculate(num1,num2,"^")+"<br>");
+document.getElementById("Cal_Result").innerHTML = num1 + " + " + num2 + " = " + cal(num1,num2,"+") + "<br>" + 
+    num1 + " - " + num2 + " = " + cal(num1,num2,"-") + "<br>" +
+    num1 + " + " + num2 + " = " + cal(num1,num2,"+") + "<br>" +
+    num1 + " * " + num2 + " = " + cal(num1,num2,"*") + "<br>" +
+    num1 + " / " + num2 + " = " + cal(num1,num2,"/") + "<br>" +
+    num1 + " % " + num2 + " = " + cal(num1,num2,"%") + "<br>" +
+    num1 + " ^ " + num2 + " = " + cal(num1,num2,"^");
 
 </script>
 </body>

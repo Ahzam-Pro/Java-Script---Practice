@@ -21,14 +21,14 @@ button:hover {
 
 h1 {
     text-align: center;
-    text-decoration: overline;
+    font-style: unset;
 }
 
 #Welcome_para {
     text-align: justify;
 }
 
-.Links_Buttons > button {
+.Links_Buttons button {
     text-align: left;
 }
 
@@ -39,10 +39,16 @@ h1 {
 
 footer {
     border: #121212;
+    text-align: center;
 }
 
 footer > button {
     color: #FFFFFF;
     background-color: #121212;
     text-decoration: solid;
+}
+
+#Git_Link:hover {
+    color: #D6AD55;
+    text-decoration: dashed #D6AD55 solid 1px;
 }
