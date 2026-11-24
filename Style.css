@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background-color: #0F172A;
     color: whitesmoke;
     font-family: "Times New Roman", Arial, serif;
 }
@@ -16,7 +16,6 @@ button {
 button:hover {
     color: #1D4ED8;
     background-color: #121212;
-    text-decoration: underline #10B981 solid 2px;
 }
 
 h1 {
@@ -50,5 +49,22 @@ footer > button {
 
 #Git_Link:hover {
     color: #D6AD55;
-    text-decoration: dashed #D6AD55 solid 1px;
+}
+
+.topic > h2 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.topic {
+    border: 2px solid #1D4ED8;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1E293B;
+}
+
+.topic > button {
+    text-align: center;
 }

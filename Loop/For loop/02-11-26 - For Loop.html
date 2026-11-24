@@ -8,44 +8,34 @@
 <body>
 
 <lable for="marks"> Enter Your Total Marks In %: </lable>
-<input type="number" id="marks" name="marks" placeholder="Enter Your Marks in %" required>
+<input type="number" id="marks" name="marks" placeholder="Enter Your Marks in %" required><br>
 
 <button type="submit" onclick="checkNumber()">Submit Your Grade</button>
+
+<p id="result"></p>
 
 <script>
     function checkNumber() {
         var marks = Number(document.getElementById("marks").value);
 
-        if (marks > 100) {
-            document.write(marks +" is A1 Grade");
-        }
-        else if (marks > 90){
-            document.write(marks+" is A2 Grade");
-        }
-        else if (marks > 80){
-            document.write(marks+" is B1 Grade");
-        }
-        else if (marks > 70){
-            document.write(marks+" is B2 Grade");
-        }
-        else if (marks > 60){
-            document.write(marks+" is C1 Grade");
-        }
-        else if (marks > 50){
-            document.write(marks+" is C2 Grade");
-        }
-        else if (marks > 40){
-            document.write(marks+" is D1 Grade");
-        }
-        else if (marks > 33){
-            document.write(marks+" is D2 Grade");
-        }
-        else{
-            document.write("FAIL");
+        if (marks > 90) {
+            document.getElementById("result").innerHTML = marks +" is A1 Grade";
+        } else if (marks > 80){
+            document.getElementById("result").innerHTML = marks+" is A2 Grade";
+        } else if (marks > 70){
+            document.getElementById("result").innerHTML = marks+" is B1 Grade";
+        } else if (marks > 60){
+            document.getElementById("result").innerHTML = marks+" is B2 Grade";
+        } else if (marks > 50){
+            document.getElementById("result").innerHTML = marks+" is C1 Grade";
+        } else if (marks > 40){
+            document.getElementById("result").innerHTML = marks+" is C2 Grade";
+        } else if (marks > 33){
+            document.getElementById("result").innerHTML = marks+" is D1 Grade";
+        } else{
+            document.getElementById("result").innerHTML = "FAIL";
         }
     }
-
-    checkNumber();
 
 </script>
 
