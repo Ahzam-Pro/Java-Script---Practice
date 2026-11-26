@@ -7,15 +7,23 @@
 </head>
 <body>
 
+<label for="num"></label>
+<input type="number" id="num" name="num" placeholder="Enter Your Number: " required>
+<button type="submit" onclick="numCheck()">Submit Number</button>
+
+<p id="result"></p>
+
 <script>
 	
-	var num1 = prompt("Enter Your Number: ")
+function numCheck(){
+	var num1 = Number(document.getElementById("num").value);
 
 	if (num1 % 2 === 0) {
-		document.write("The Number is Even: " + num1)
+		document.getElementById("result").innerHTML= "The Number is Even: " + num1;
 	} else {
-		document.write("The Number is Odd: " + num1)
+		document.getElementById("result").innerHTML= "The Number is Odd: " + num1;
 	}
+}
 
 </script>
 

@@ -7,30 +7,42 @@
 </head>
 <body>
 
+<label for="SA">Total Sell Amount: </label>
+<input type="number" id="SA" name="SA" placeholder="SA" required><br>
+
+<label for="CA">Total Cost Price: </label>
+<input type="number" id="CA" name="CA" placeholder="CA" required><br>
+
+<button type="submit" onclick="los_pro_cal()">Submit</button><br>
+
+<p id="result"></p>
+
 <script>
-	
-var	sp = Number(prompt("Enter Your Sell Amount"));
-var cp = Number(prompt("Enter Your Cost Price"));
 
-if (sp>cp) {
-	Profit = sp-cp;
+function los_pro_cal(){
 
-	Gain_Percentage = Profit/cp*100;
+	var	sp = Number(document.getElementById("SA").value);
+	var cp = Number(document.getElementById("CA").value);
 
-	document.write("The Profit is " + Profit + "<br>");
+	if (sp>cp) {
+		Profit = sp-cp;
 
-	document.write("Gain Percentage " + Gain_Percentage + "%");
-} 
-else if (sp<cp) {
-	Loss = cp-sp;
+		Gain_Percentage = Profit/cp*100;
 
-	Loss_Percentage = Loss/cp*100;
+		document.getElementById("sp").innerHTML= "The Profit is " + Profit + "<br>";
 
-	document.write("The loss is " + Loss  + "<br>");
+		document.getElementById("sp").innerHTML= "Gain Percentage " + Gain_Percentage + "%";
+	} 
+	else if (sp<cp) {
+		Loss = cp-sp;
 
-	document.write("Gain Percentage " + Loss_Percentage + "%")
+		Loss_Percentage = Loss/cp*100;
+
+		document.getElementById("cp").innerHTML= "The loss is " + Loss  + "<br>";
+
+		document.getElementById("cp").innerHTML= "Loss Percentage " + Loss_Percentage + "%";
+	}
 }
-	
 </script>
 
 </body>
