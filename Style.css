@@ -21,6 +21,7 @@ button:hover {
 h1 {
     text-align: center;
     font-style: unset;
+    font-weight: 600;
 }
 
 #Welcome_para {

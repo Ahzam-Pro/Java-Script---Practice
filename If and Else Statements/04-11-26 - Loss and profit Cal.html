@@ -29,18 +29,18 @@ function los_pro_cal(){
 
 		Gain_Percentage = Profit/cp*100;
 
-		document.getElementById("sp").innerHTML= "The Profit is " + Profit + "<br>";
-
-		document.getElementById("sp").innerHTML= "Gain Percentage " + Gain_Percentage + "%";
-	} 
-	else if (sp<cp) {
+		document.getElementById("result").innerHTML= "The Profit is: " + Profit + " ₹ " + "<br> Gain Percentage " + 
+		Gain_Percentage + "%";
+	} 	else if (sp<cp) {
 		Loss = cp-sp;
 
 		Loss_Percentage = Loss/cp*100;
 
-		document.getElementById("cp").innerHTML= "The loss is " + Loss  + "<br>";
-
-		document.getElementById("cp").innerHTML= "Loss Percentage " + Loss_Percentage + "%";
+		document.getElementById("result").innerHTML= "The loss is: " + Loss  + "<br> Loss Percentage " + 
+		Loss_Percentage + "%";
+	}	else{
+		document.getElementById("result").innerHTML= "Bro, you sold it for the same price you bought it? 😭 Even your" 
+		+ " calculator is wondering why it got hired! 🧮💀";
 	}
 }
 </script>
