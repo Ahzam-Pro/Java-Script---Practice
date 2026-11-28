@@ -11,10 +11,11 @@ button {
     border: 10px;
     font-family: inherit;
     text-align: center;
+    border-radius: 4px;
 }
 
 button:hover {
-    color: #1D4ED8;
+    border-radius: 6px;
     background-color: #121212;
 }
 
@@ -22,10 +23,15 @@ h1 {
     text-align: center;
     font-style: unset;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
 
 #Welcome_para {
     text-align: justify;
+    text-indent: 20px;
+    white-space: pre-line;
 }
 
 .Links_Buttons button {
